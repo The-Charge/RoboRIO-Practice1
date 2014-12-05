@@ -21,8 +21,7 @@ void ServoRight::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void ServoRight::Execute() {
-	Robot::blackServo->setPossition(0.9);
-
+	Robot::blackServo->setPossition(0.1);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ServoRight::IsFinished() {

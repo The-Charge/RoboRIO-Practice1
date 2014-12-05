@@ -14,7 +14,7 @@ Children:
           validators: [PWMOutput]
           value: '0'
       Base: Servo
-      Name: Servo 1
+      Name: FirstServo
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: ServoCenter}
@@ -59,7 +59,31 @@ Children:
           default: '1'
           name: Button
           validators: null
-          value: '1'
+          value: '2'
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id002
+          value: ServoLeft
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id003
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whileHeld
+      Base: Joystick Button
+      Name: ServoButtonLeft
+    - Children: []
+      Properties:
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: XboxOne}
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id001
+          default: '1'
+          name: Button
+          validators: null
+          value: '16'
         Command: !!robotbuilder.data.properties.TypeSelectionProperty
           default: None
           name: Command
@@ -71,9 +95,9 @@ Children:
           default: whileHeld
           name: When to Run
           validators: null
-          value: whileHeld
+          value: whenReleased
       Base: Joystick Button
-      Name: ServoButtonLeft
+      Name: ServoButtonCenter
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: ['0', '1', '2', '3', '4', '5']
