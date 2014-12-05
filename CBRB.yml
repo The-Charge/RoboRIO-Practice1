@@ -17,7 +17,7 @@ Children:
       Name: FirstServo
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: ServoCenter}
+        name: Default Command, type: Command, validators: null, value: JoystickServo}
     Base: Subsystem
     Name: BlackServo
   Properties: {}
