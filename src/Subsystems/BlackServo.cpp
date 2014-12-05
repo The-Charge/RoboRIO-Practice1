@@ -25,3 +25,7 @@ void BlackServo::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+void BlackServo::setPossition(float possition) {
+	servo1->Set(possition);
+
+}
