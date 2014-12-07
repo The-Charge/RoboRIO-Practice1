@@ -1,3 +1,5 @@
 Debug/FRCUserProgram
 *.o
 sysProps.xml
+/Debug/
+.settings/language.settings.xml
