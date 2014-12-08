@@ -3,6 +3,15 @@ RoboRIO-Practice1
 
 Simple project with one joystick and one servo on the RoboRIO
 
+	Joystick is an Xbox controller:
+		Button 1 twists servo left
+		Button 2 twists servo right
+		Button 3 centers servo
+		Button 9 centers servo (pressing left stick)
+		Left stick X-Axes rotates servo
+		
+	
+
 Each programmer should add their name as a deveoloper to this README.md file.
 
 Developers:
