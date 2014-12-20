@@ -22,7 +22,7 @@ void JoystickServo::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void JoystickServo::Execute() {
-	servoPossition = ((Robot::oi->getXboxOne()->GetRawAxis(0)) + 1.0)/2.0;
+	servoPossition = ((Robot::oi->getDriverJoystick()->GetRawAxis(0)) + 1.0)/2.0;
 	Robot::blackServo->setPossition(servoPossition);
 	
 }
