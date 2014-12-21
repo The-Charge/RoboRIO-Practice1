@@ -1,6 +1,8 @@
 RoboRIO-Practice1
 =================
 
+[![Stories in Ready](https://badge.waffle.io/the-charge/roborio-practice1.svg?label=ready&title=Ready)](http://waffle.io/the-charge/roborio-practice1) 
+
 Simple project with one joystick and one servo on the RoboRIO
 
 	Joystick is an Xbox controller:
